@@ -1,5 +1,7 @@
 -- Criar um Banco
 CREATE DATABASE lojinha;
+GO
+
 use lojinha;
 CREATE TABLE Categoria
 (

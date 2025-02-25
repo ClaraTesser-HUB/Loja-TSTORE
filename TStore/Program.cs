@@ -1,7 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using TStore.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//Adicionar o serviço de conexão com o Banco de Dados
+string conexao = builder.Configuration.GetConnectionString("Lojaconexao");
+builder.Services.AddDbContext<AppDbContext>(
+    options => options.UseSqlServer(conexao)
+);
+
 
 var app = builder.Build();
 
