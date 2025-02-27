@@ -21,14 +21,14 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="~/img/produto/1/oceane rb.png" alt="..." />
+                            <img class="card-img-top" src="@produto.Fotos[0].Foto" alt="@produto.Nome" />
                             <!-- Product details-->
                             <div class="card-body p-2">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Paleta Sombras Océane Edition 6 Eyeshadow Palette Glorious 7,8g</h5>
+                                    <h5 class="fw-bolder">@produto.Nome</h5>
                                     <!-- Product price-->
-                                    $79.00
+                                    R$ @produto.ValorVenda.ToString("N2")
                                 </div>
                             </div>
                             <!-- Product actions-->
@@ -38,6 +38,8 @@
                         </div>
                     </div>
                     }
+                    
+                    
 
                 </div>
             </div>

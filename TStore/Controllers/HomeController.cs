@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using TStore.Data;
 using TStore.Models;
 
@@ -19,7 +20,10 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         ViewData["Carrinho"] = 7;
-        List<Produto> produtos =_db.Produtos.ToList();
+        List<Produto> produtos =_db.Produtos
+            .Where(p => p.Destaque)
+            .Include(p => p.Fotos)
+            .ToList();
         return View(produtos);
     }
 

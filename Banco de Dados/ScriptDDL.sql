@@ -3,6 +3,7 @@ CREATE DATABASE lojinha;
 GO
 
 use lojinha;
+go
 CREATE TABLE Categoria
 (
 	Id			int not null identity primary key,
@@ -16,7 +17,7 @@ CREATE TABLE Produto
 	Id			int not null identity primary key,
 	Nome		varchar (100) not null,
 	Descricao	varchar (1000),
-	Categoria	int not null,
+	CategoriaId	int not null,
 	ValorCusto	numeric(10,2),
 	ValorVenda	numeric(10,2) not null,
 	QtdeEstoque	int not null default 0,

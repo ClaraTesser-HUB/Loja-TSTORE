@@ -1,4 +1,10 @@
 .card-img-top{
     height: 300px;
-    object-fit: contain
+    object-fit: contain;
+}
+
+.card-img-top:hover{
+    transform: scale(1.07);
+    transition-duration: 1.3s;
+    z-index: 100;
 }
