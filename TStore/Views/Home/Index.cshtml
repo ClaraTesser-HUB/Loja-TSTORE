@@ -21,7 +21,13 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
+                            @if (produto.Fotos.Count >0)
+                            {
                             <img class="card-img-top" src="@produto.Fotos[0].Foto" alt="@produto.Nome" />
+                            }
+                            else{
+                                <img class="card-img-top" src="~/img/produto-sem-imagem.jpg" alt="@produto.Nome" />
+                            }
                             <!-- Product details-->
                             <div class="card-body p-2">
                                 <div class="text-center">
@@ -33,7 +39,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver Opções</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" asp-controller="Home" asp-action="Produto" asp-route-id="@produto.Id">Ver Opções</a></div>
                             </div>
                         </div>
                     </div>
