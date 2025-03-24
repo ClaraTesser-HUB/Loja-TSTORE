@@ -45,7 +45,8 @@ public class HomeController : Controller
 
         //Agrupar o Produto e os Semelhantes no ProdutoVM
         ProdutoVM produtoVM =new(){
-        Semelhantes =produtos
+            Produto = produto,
+            Semelhantes = produtos
         };
 
         return View(produtoVM);
