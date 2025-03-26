@@ -32,7 +32,8 @@ public class AppDbSeed
             builder.Entity<Produto>().HasData(produtos);
 
             List<ProdutoFoto> fotos = new (){
-                new() {Id =1, ProdutoId = 1, Foto = "\\img\\produto\\6\\1.jpeg"}
+                new() {Id =1, ProdutoId = 1, Foto = "\\img\\produto\\6\\1.jpeg"},
+                new() {Id =2, ProdutoId = 1, Foto = "\\img\\produto\\6\\2.jpeg"}
             };
             builder.Entity<ProdutoFoto>().HasData(fotos);
 
