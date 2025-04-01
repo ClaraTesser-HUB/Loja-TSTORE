@@ -120,29 +120,29 @@ public class AppDbSeed
                 new() {Id=9, ProdutoId= 3, Foto="\\img\\produto\\2\\3.jpeg"},
 
                 //Torradeira
-                new() {Id=7, ProdutoId= 4, Foto="\\img\\produto\\4\\1.jpeg"},
-                new() {Id=8, ProdutoId= 4, Foto="\\img\\produto\\4\\2.jpeg"},
-                new() {Id=9, ProdutoId= 4, Foto="\\img\\produto\\4\\3.jpeg"},
+                new() {Id=10, ProdutoId= 4, Foto="\\img\\produto\\4\\1.jpeg"},
+                new() {Id=11, ProdutoId= 4, Foto="\\img\\produto\\4\\2.jpeg"},
+                new() {Id=12, ProdutoId= 4, Foto="\\img\\produto\\4\\3.jpeg"},
 
                 //Sofá
-                new() {Id=7, ProdutoId= 5, Foto="\\img\\produto\\3\\1.jpeg"},
-                new() {Id=8, ProdutoId= 5, Foto="\\img\\produto\\3\\2.jpeg"},
-                new() {Id=9, ProdutoId= 5, Foto="\\img\\produto\\3\\3.jpeg"},
+                new() {Id=13, ProdutoId= 5, Foto="\\img\\produto\\3\\1.jpeg"},
+                new() {Id=14, ProdutoId= 5, Foto="\\img\\produto\\3\\2.jpeg"},
+                new() {Id=15, ProdutoId= 5, Foto="\\img\\produto\\3\\3.jpeg"},
 
                 //Tapete
-                new() {Id=7, ProdutoId= 6, Foto="\\img\\produto\\5\\1.jpeg"},
-                new() {Id=8, ProdutoId= 6, Foto="\\img\\produto\\5\\2.jpeg"},
-                new() {Id=9, ProdutoId= 6, Foto="\\img\\produto\\5\\3.jpeg"},
+                new() {Id=16, ProdutoId= 6, Foto="\\img\\produto\\5\\1.jpeg"},
+                new() {Id=17, ProdutoId= 6, Foto="\\img\\produto\\5\\2.jpeg"},
+                new() {Id=18, ProdutoId= 6, Foto="\\img\\produto\\5\\3.jpeg"},
 
                 //Guarda roupa
-                new() {Id=7, ProdutoId= 7, Foto="\\img\\produto\\7\\1.jpeg"},
-                new() {Id=8, ProdutoId= 7, Foto="\\img\\produto\\7\\2.jpeg"},
-                new() {Id=9, ProdutoId= 7, Foto="\\img\\produto\\7\\3.jpeg"},
+                new() {Id=19, ProdutoId= 7, Foto="\\img\\produto\\7\\1.jpeg"},
+                new() {Id=20, ProdutoId= 7, Foto="\\img\\produto\\7\\2.jpeg"},
+                new() {Id=21, ProdutoId= 7, Foto="\\img\\produto\\7\\3.jpeg"},
 
                 //Vestido
-                new() {Id=7, ProdutoId= 8, Foto="\\img\\produto\\8\\1.jpeg"},
-                new() {Id=8, ProdutoId= 8, Foto="\\img\\produto\\8\\2.jpeg"},
-                new() {Id=9, ProdutoId= 8, Foto="\\img\\produto\\8\\3.jpeg"},
+                new() {Id=22, ProdutoId= 8, Foto="\\img\\produto\\8\\1.jpeg"},
+                new() {Id=23, ProdutoId= 8, Foto="\\img\\produto\\8\\2.jpeg"},
+                new() {Id=24, ProdutoId= 8, Foto="\\img\\produto\\8\\3.jpeg"},
             };
             builder.Entity<ProdutoFoto>().HasData(fotos);
 
